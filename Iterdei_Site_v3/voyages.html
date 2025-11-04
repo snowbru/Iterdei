@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Iterdei – Voyages & Pèlerinages</title>
-  <meta name="description" content="Découvrez les voyages et pèlerinages Iterdei : petits groupes fraternels, itinéraires sobres & beaux, accompagnement discret. Filtrez par thème, durée, budget et période." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.iterdei.org/voyages.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Iterdei – Voyages & Pèlerinages" />
-  <meta property="og:description" content="Chemins de foi, voies de lumière. Voyages en petits groupes : prière, marche, fraternité." />
-  <meta property="og:image" content="./assets/og-voyages.jpg" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <meta name="description" content="Découvrez les voyages et pèlerinages Iterdei : petits groupes fraternels, itinéraires sobres & beaux, accompagnement discret. Filtrez par thème, durée, budget et période."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.iterdei.org/voyages.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Iterdei – Voyages & Pèlerinages"/>
+  <meta property="og:description" content="Chemins de foi, voies de lumière. Voyages en petits groupes : prière, marche, fraternité."/>
+  <meta property="og:image" content="./assets/og-voyages.jpg"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+  <link rel="manifest" href="./manifest.json"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     :root{color-scheme:light}
     body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fefcf8;color:#1f2937}
@@ -40,15 +38,13 @@
     .fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem}
   </style>
 </head>
-
 <body class="overflow-x-hidden">
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:bg-teal-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
-
   <header>
     <nav id="navbar" role="navigation" class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-teal-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <a href="index.html" class="flex items-center gap-3" aria-label="Iterdei – Accueil">
-          <img src="./assets/iterdei-logo.svg" alt="Logo Iterdei" width="40" height="40" class="rounded-lg" loading="eager" />
+          <img src="./assets/iterdei-logo.svg" alt="Logo Iterdei" width="40" height="40" class="rounded-lg" loading="eager"/>
           <span class="font-serif text-xl font-semibold text-teal-800">Iterdei</span>
         </a>
         <div class="hidden md:flex items-center gap-8 text-gray-700">
@@ -61,7 +57,6 @@
       </div>
     </nav>
   </header>
-
   <main id="main" role="main">
     <section class="pt-28 pb-10 px-4 bg-gradient-to-b from-white to-teal-50">
       <div class="max-w-7xl mx-auto">
@@ -97,7 +92,7 @@
                 </select>
               </label>
               <label class="block text-sm">Budget max (€)
-                <input id="f-budget" type="number" min="0" step="50" placeholder="ex: 350" class="mt-1 w-full border rounded-xl px-3 py-2" />
+                <input id="f-budget" type="number" min="0" step="50" placeholder="ex: 350" class="mt-1 w-full border rounded-xl px-3 py-2"/>
               </label>
               <label class="block text-sm">Mois
                 <select id="f-mois" class="mt-1 w-full border rounded-xl px-3 py-2">
@@ -119,7 +114,6 @@
         </div>
       </div>
     </section>
-
     <section class="py-10 px-4">
       <div class="max-w-7xl mx-auto">
         <div class="flex items-center justify-between gap-4 mb-4">
@@ -136,7 +130,6 @@
         <p id="empty" class="hidden text-gray-600 italic">Aucun voyage ne correspond aux filtres choisis.</p>
       </div>
     </section>
-
     <section id="contact" class="py-16 px-4 bg-gradient-to-b from-teal-50 to-white">
       <div class="max-w-5xl mx-auto text-center">
         <h2 class="font-serif text-3xl md:text-4xl font-bold text-teal-900">Une question ? Besoin d'un devis ?</h2>
@@ -145,11 +138,10 @@
       </div>
     </section>
   </main>
-
   <footer role="contentinfo" class="bg-teal-900 text-teal-100 py-12 px-4">
     <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-center">
       <div class="flex items-center gap-3">
-        <img src="./assets/iterdei-logo.svg" alt="Iterdei" width="48" height="48" class="rounded-xl" loading="lazy" />
+        <img src="./assets/iterdei-logo.svg" alt="Iterdei" width="48" height="48" class="rounded-xl" loading="lazy"/>
         <div>
           <p class="font-serif text-lg font-semibold">Iterdei</p>
           <p class="text-teal-200">© 2025 – Voyages & Pèlerinages</p>
@@ -167,9 +159,7 @@
       </div>
     </div>
   </footer>
-
   <dialog id="dlg" aria-labelledby="dlg-title" aria-modal="true"></dialog>
-
   <script src="./js/voyages.js" defer></script>
 </body>
 </html>
