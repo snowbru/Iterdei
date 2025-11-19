@@ -1,9 +1,0 @@
-{
-  "name": "Iterdei",
-  "short_name": "Iterdei",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0c9483",
-  "icons": []
-}

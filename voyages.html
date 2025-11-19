@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Iterdei – Voyages & Pèlerinages</title>
+  <meta name="description" content="Découvrez les voyages et pèlerinages Iterdei : petits groupes fraternels, itinéraires sobres & beaux, accompagnement discret. Filtrez par thème, durée, budget et période."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.iterdei.org/voyages.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Iterdei – Voyages & Pèlerinages"/>
+  <meta property="og:description" content="Chemins de foi, voies de lumière. Voyages en petits groupes : prière, marche, fraternité."/>
+  <meta property="og:image" content="./assets/og-voyages.jpg"/>
+  <meta property="og:locale" content="fr_FR"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+  <link rel="manifest" href="./manifest.json"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme:light}
+    body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fefcf8;color:#1f2937}
+    .font-serif{font-family:'Playfair Display',Georgia,serif}
+    .card{transition:transform .25s ease, box-shadow .25s ease}
+    .card:hover{transform:translateY(-4px); box-shadow:0 14px 36px rgba(0,0,0,.1)}
+    .img-cover{width:100%;height:14rem;object-fit:cover;background:#f3f4f6}
+    .nav-scrolled{background:rgba(255,255,255,.9)!important; box-shadow:0 10px 30px rgba(0,0,0,.08); backdrop-filter:blur(10px)}
+    .btn{position:relative;transition:transform .18s ease, box-shadow .25s ease}
+    .btn:hover{transform:translateY(-1px)}
+    .reveal{opacity:0; transform:translateY(10px)}
+    .reveal.in{opacity:1; transform:none; transition:opacity .6s ease, transform .6s ease}
+    .badge{display:inline-flex;align-items:center;gap:.375rem;padding:.25rem .5rem;border-radius:9999px;font-size:.75rem;line-height:1;border:1px solid rgba(16,185,129,.25);background:#ecfdf5;color:#065f46}
+    .grid-auto{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+    dialog[open]{max-width:48rem;width:calc(100% - 2rem);border:none;border-radius:1rem;padding:0;box-shadow:0 40px 80px rgba(0,0,0,.3)}
+    dialog::backdrop{background:rgba(0,0,0,.55)}
+    .fieldset{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem}
+  </style>
+</head>
+<body class="overflow-x-hidden">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:bg-teal-700 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
+  <header>
+    <nav id="navbar" role="navigation" class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur-md border-b border-teal-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3" aria-label="Iterdei – Accueil">
+          <img src="./assets/iterdei-logo.svg" alt="Logo Iterdei" width="40" height="40" class="rounded-lg" loading="eager"/>
+          <span class="font-serif text-xl font-semibold text-teal-800">Iterdei</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-gray-700">
+          <a href="index.html" class="hover:text-teal-700">Accueil</a>
+          <a href="voyages.html" class="text-teal-700 font-semibold">Voyages</a>
+          <a href="apropos.html" class="hover:text-teal-700">À propos</a>
+          <a href="#contact" class="hover:text-teal-700">Contact</a>
+          <a href="#contact" class="btn bg-teal-700 text-white px-4 py-2 rounded-full hover:bg-teal-800">Demander un devis</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main" role="main">
+    <section class="pt-28 pb-10 px-4 bg-gradient-to-b from-white to-teal-50">
+      <div class="max-w-7xl mx-auto">
+        <nav class="text-sm text-gray-500 mb-3" aria-label="Fil d'Ariane">
+          <ol class="flex items-center gap-2">
+            <li><a class="hover:underline" href="index.html">Accueil</a></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" class="text-gray-700">Voyages</li>
+          </ol>
+        </nav>
+        <div class="grid md:grid-cols-2 gap-6 items-end">
+          <div>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-teal-900 leading-tight">Voyages & Pèlerinages</h1>
+            <p class="mt-3 text-gray-700">Petits groupes (2–6 personnes), prière, marche, fraternité. Filtrez par thème, durée, budget et période.</p>
+          </div>
+          <form id="filters" class="bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-teal-100" aria-label="Filtres de recherche">
+            <div class="fieldset">
+              <label class="block text-sm">Thème
+                <select id="f-theme" class="mt-1 w-full border rounded-xl px-3 py-2">
+                  <option value="">Tous</option>
+                  <option value="marial">Marial</option>
+                  <option value="madeleine">Ste‑Madeleine</option>
+                  <option value="montagne">Montagne</option>
+                  <option value="transfrontalier">Transfrontalier</option>
+                </select>
+              </label>
+              <label class="block text-sm">Durée
+                <select id="f-duree" class="mt-1 w-full border rounded-xl px-3 py-2">
+                  <option value="">Toutes</option>
+                  <option value="2j">2 jours</option>
+                  <option value="3j">3 jours</option>
+                  <option value="4j">4+ jours</option>
+                </select>
+              </label>
+              <label class="block text-sm">Budget max (€)
+                <input id="f-budget" type="number" min="0" step="50" placeholder="ex: 350" class="mt-1 w-full border rounded-xl px-3 py-2"/>
+              </label>
+              <label class="block text-sm">Mois
+                <select id="f-mois" class="mt-1 w-full border rounded-xl px-3 py-2">
+                  <option value="">Tous</option>
+                  <option value="03">Mars</option>
+                  <option value="04">Avril</option>
+                  <option value="05">Mai</option>
+                  <option value="06">Juin</option>
+                  <option value="09">Septembre</option>
+                  <option value="10">Octobre</option>
+                </select>
+              </label>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <button type="button" id="btn-apply" class="btn bg-teal-700 text-white px-4 py-2 rounded-full hover:bg-teal-800">Appliquer</button>
+              <button type="button" id="btn-reset" class="btn bg-white border px-4 py-2 rounded-full hover:bg-gray-50">Réinitialiser</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 px-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-center justify-between gap-4 mb-4">
+          <p id="results-count" class="text-sm text-gray-600">0 résultats</p>
+          <label class="text-sm">Trier par
+            <select id="sort" class="ml-2 border rounded-xl px-3 py-2">
+              <option value="date">Prochaine date</option>
+              <option value="prix">Prix croissant</option>
+              <option value="duree">Durée</option>
+            </select>
+          </label>
+        </div>
+        <div id="grid" class="grid grid-auto gap-6" aria-live="polite"></div>
+        <p id="empty" class="hidden text-gray-600 italic">Aucun voyage ne correspond aux filtres choisis.</p>
+      </div>
+    </section>
+    <section id="contact" class="py-16 px-4 bg-gradient-to-b from-teal-50 to-white">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-teal-900">Une question ? Besoin d'un devis ?</h2>
+        <p class="mt-3 text-gray-700">Indiquez le voyage, les dates possibles et le nombre de personnes. Nous répondons sous 24–48 h.</p>
+        <a href="mailto:contact@iterdei.org" class="mt-6 inline-flex btn bg-teal-700 text-white px-6 py-3 rounded-full hover:bg-teal-800">Écrire à Iterdei</a>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo" class="bg-teal-900 text-teal-100 py-12 px-4">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+      <div class="flex items-center gap-3">
+        <img src="./assets/iterdei-logo.svg" alt="Iterdei" width="48" height="48" class="rounded-xl" loading="lazy"/>
+        <div>
+          <p class="font-serif text-lg font-semibold">Iterdei</p>
+          <p class="text-teal-200">© 2025 – Voyages & Pèlerinages</p>
+        </div>
+      </div>
+      <nav class="text-sm flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="index.html" class="hover:text-white">Accueil</a>
+        <a href="voyages.html" class="hover:text-white">Voyages</a>
+        <a href="apropos.html" class="hover:text-white">À propos</a>
+        <button class="hover:text-white" onclick="openLegal('mentions')">Mentions légales</button>
+        <button class="hover:text-white" onclick="openLegal('rgpd')">RGPD</button>
+      </nav>
+      <div class="text-sm md:text-right text-teal-200">
+        Hébergement : Infomaniak, Genève — contact : <a class="underline" href="mailto:contact@iterdei.org">contact@iterdei.org</a>
+      </div>
+    </div>
+  </footer>
+  <dialog id="dlg" aria-labelledby="dlg-title" aria-modal="true"></dialog>
+  <script src="./js/voyages.js" defer></script>
+</body>
+</html>
