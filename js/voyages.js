@@ -68,7 +68,77 @@
       img: './assets/voyages/ligurie.jpg',
       dates: ['2025-04-18', '2025-10-10'],
       tags: ['Ligurie', 'Côte', 'Chapelles']
-    }
+    },
+  {
+    id: 'ars-sur-formans',
+    titre: 'Ars-sur-Formans',
+    pays: 'France',
+    theme: ['marial'],
+    duree: '2j',
+    jours: 2,
+    prix: 200,
+    devise: 'EUR',
+    resume: "Sur les pas du Saint Curé d'Ars, patronage des prêtres.",
+    img: './assets/voyages/ars.jpg',
+    dates: ['2025-05-10', '2025-09-14'],
+    tags: ['Ain', 'Sanctuaire', 'Spiritualité']
+  },
+  {
+    id: 'rocamadour',
+    titre: 'Rocamadour',
+    pays: 'France',
+    theme: ['marial', 'montagne'],
+    duree: '3j',
+    jours: 3,
+    prix: 280,
+    devise: 'EUR',
+    resume: "Cité sacrée accrochée à la falaise, sanctuaire millénaire de la Vierge Noire.",
+    img: './assets/voyages/rocamadour.jpg',
+    dates: ['2025-06-07', '2025-09-27'],
+    tags: ['Lot', 'Sanctuaire', 'Médiéval']
+  },
+  {
+    id: 'la-salette',
+    titre: 'La Salette',
+    pays: 'France',
+    theme: ['marial', 'montagne'],
+    duree: '3j',
+    jours: 3,
+    prix: 270,
+    devise: 'EUR',
+    resume: "Sanctuaire alpin de l'apparition, message de réconciliation et d'espérance.",
+    img: './assets/voyages/la-salette.jpg',
+    dates: ['2025-07-12', '2025-09-19'],
+    tags: ['Isère', 'Sanctuaire', 'Montagne']
+  },
+  {
+    id: 'lourdes',
+    titre: 'Lourdes',
+    pays: 'France',
+    theme: ['marial'],
+    duree: '4j',
+    jours: 4,
+    prix: 350,
+    devise: 'EUR',
+    resume: "Le sanctuaire marial le plus visité de France, grotte de Massabielle et basiliques.",
+    img: './assets/voyages/lourdes.jpg',
+    dates: ['2025-08-15', '2025-10-07'],
+    tags: ['Hautes-Pyrénées', 'Sanctuaire', 'Pèlerinage']
+  },
+  {
+    id: 'paray-le-monial',
+    titre: 'Paray-le-Monial',
+    pays: 'France',
+    theme: ['marial'],
+    duree: '2j',
+    jours: 2,
+    prix: 190,
+    devise: 'EUR',
+    resume: "Ville du Sacré-Cœur, basilique romane et spiritualité de Sainte Marguerite-Marie.",
+    img: './assets/voyages/paray.jpg',
+    dates: ['2025-06-20', '2025-10-12'],
+    tags: ['Saône-et-Loire', 'Sanctuaire', 'Roman']
+  }
   ];
 
   // Filter state
