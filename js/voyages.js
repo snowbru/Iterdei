@@ -20,7 +20,7 @@
 
   // ===== DATA: VOYAGES =====
   const VOYAGES = [
-    { id: 'cotignac', titre: 'Cotignac', pays: 'France', theme: ['marial'], duree: '2j', jours: 2, prix: 180, devise: 'EUR', resume: "N.-D. de Grâces & St Joseph, prière et marche douce.", img: 'https://images.unsplash.com/photo-1611936041227-e6d7e8d4f896?w=800', dates: ['2025-04-12', '2025-05-24', '2025-10-04'], tags: ['Provence', 'Sanctuaire', 'Marche 6–10 km'] },
+    { id: 'cotignac', titre: 'Cotignac', pays: 'France', theme: ['marial'], duree: '2j', jours: 2, prix: 180, devise: 'EUR', resume: "N.-D. de Grâces & St Joseph, prière et marche douce.", img: 'https://images.unsplash.com/photo-wk-NZBIMNCM?w=800', dates: ['2025-04-12', '2025-05-24', '2025-10-04'], tags: ['Provence', 'Sanctuaire', 'Marche 6–10 km'] },
          { id: 'sainte-baume', titre: 'Sainte-Baume', pays: 'France', theme: ['madeleine', 'montagne'], duree: '2j', jours: 2, prix: 220, devise: 'EUR', resume: "Grotte sanctuaire de Marie-Madeleine, pèlerinage en montagne.", img: 'https://images.unsplash.com/photo-hXA65xZFnsY?w=800', dates: ['2025-03-29', '2025-05-17', '2025-09-20'], tags: ['Var', 'Grotte', 'Forêt'] },
 
     { id: 'laus', titre: 'Notre”Dame du Laus', pays: 'France', theme: ['marial', 'montagne'], duree: '3j', jours: 3, prix: 260, devise: 'EUR', resume: "Sanctuaire alpin, liturgie simple, fraternité.", img: 'https://images.unsplash.com/photo-1584700631091-e43dd2f73c70?w=800', dates: ['2025-06-14', '2025-09-13'], tags: ['Alpes', 'Sanctuaire', 'Marche 8–12 km'] },
