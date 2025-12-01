@@ -1,13 +1,12 @@
-// js/voyages.js – Iterdei – affichage des voyages filtrables et triables (OPTIMISÉ)
-(() => {
+230ctrl+f280// js/voyages.js – Iterdei – affichage des voyages filtrables et triables (OPTIMISÉ)
+(() =370ctrl+f270
   // ===== CONFIGURATION & CACHE =====
-  const CONFIG = { scrollThreshold: 12, locale: 'fr-FR' };
-  const dateCache = new Map();
-
+  const CONFIG = { scrollThreshold: 12, locale: 'fr-FR'335ctrl+f350
+  const dateCache = new Map(510ctrl+f190
   // ===== NAVBAR SCROLL EFFECT (throttled) =====
   const navbar = document.getElementById('navbar');
   let scrollTimeout;
-  window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () =235
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
       navbar?.classList.toggle('nav-scrolled', window.scrollY > CONFIG.scrollThreshold);
