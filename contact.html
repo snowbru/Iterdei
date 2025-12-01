@@ -1,28 +1,91 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Contact – Sacravia</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/contact.js" defer></script>
+  <meta name="description" content="Contactez Sacravia pour une demande de devis, un projet de pèlerinage ou toute question sur nos voyages spirituels pour petits groupes.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:#050b18; color:#f7f3ea; }
+    header, footer { background:#050814; padding:1.2rem 1.5rem; }
+    header nav a { color:#f7f3ea; text-decoration:none; margin-right:1rem; font-size:0.95rem; }
+    header nav a.active { font-weight:600; border-bottom:2px solid #e4c88c; padding-bottom:0.2rem; }
+    main { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 3rem; }
+    h1 { font-size:2rem; margin-bottom:0.4rem; text-transform:uppercase; letter-spacing:0.08em; }
+    h2 { margin-top:2rem; margin-bottom:0.75rem; font-size:1.3rem; }
+    p { line-height:1.6; margin:0.4rem 0; }
+    form { margin-top:1rem; max-width:520px; }
+    label { display:block; margin-top:0.8rem; margin-bottom:0.2rem; font-size:0.9rem; }
+    input, textarea {
+      width:100%; padding:0.6rem 0.7rem; border-radius:0.4rem; border:1px solid #2b3350;
+      background:#0b1224; color:#f7f3ea; font:inherit;
+    }
+    textarea { min-height:130px; resize:vertical; }
+    button {
+      margin-top:1rem; padding:0.7rem 1.4rem; border-radius:999px; border:none;
+      background:#e4c88c; color:#050814; font-weight:600; font-size:0.95rem; cursor:pointer;
+    }
+    button:hover { filter:brightness(1.05); }
+    footer { font-size:0.8rem; color:#b9b5aa; text-align:center; }
+    a { color:#e4c88c; }
+  </style>
 </head>
 <body>
-  <header><h1>Contact & Informations</h1></header>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="voyages.html">Voyages</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
   <main>
-    <form id="contactForm">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" required>
-      <label for="email">Email :</label>
-      <input type="email" id="email" required>
-      <label for="message">Message :</label>
-      <textarea id="message" rows="5" required></textarea>
+    <h1>Contact</h1>
+    <p>
+      Nous serons heureux de répondre à vos questions ou de vous aider à préparer votre séjour.
+      Utilisez ce formulaire pour une demande simple, un devis ou une proposition de voyage.
+    </p>
+
+    <form action="mailto:ton-email@sacravia.fr" method="post" enctype="text/plain">
+      <label for="nom">Nom complet</label>
+      <input id="nom" name="Nom" required />
+
+      <label for="email">Adresse e-mail</label>
+      <input id="email" name="Email" type="email" required />
+
+      <label for="sujet">Sujet</label>
+      <input id="sujet" name="Sujet" placeholder="Demande de devis, proposition de voyage..." />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="Message" required></textarea>
+
       <button type="submit">Envoyer</button>
     </form>
-    <p id="status"></p>
+
+    <section aria-labelledby="contact-direct">
+      <h2 id="contact-direct">Contact direct</h2>
+      <p>
+        Vous pouvez également nous écrire directement à&nbsp;:
+        <a href="mailto:ton-email@sacravia.fr">ton-email@sacravia.fr</a>
+      </p>
+      <p>
+        Disponibilité&nbsp;: du lundi au samedi, 9h–18h.
+      </p>
+      <p>
+        Vous pouvez nous contacter pour&nbsp;:
+      </p>
+      <ul>
+        <li>demander un devis&nbsp;;</li>
+        <li>proposer une destination&nbsp;;</li>
+        <li>organiser un séjour spirituel pour un petit groupe&nbsp;;</li>
+        <li>poser toute question liée à nos voyages.</li>
+      </ul>
+    </section>
   </main>
 
-  <footer><p>© 2025 Sacravia</p></footer>
+  <footer>
+    Sacravia &mdash; Là où la route devient prière.
+  </footer>
 </body>
 </html>
