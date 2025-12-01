@@ -1,57 +1,314 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>À propos – Iterdei</title>
-  <meta name="description" content="En savoir plus sur Iterdei, voyages spirituels et pèlerinages depuis Nice : inspiration, valeurs, fondateur et méthode.">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>À propos de Sacravia – Chemins de foi</title>
+  <meta name="description" content="Sacravia organise des voyages spirituels et pèlerinages pour petits groupes. Découvrez la mission, la vision, les valeurs et l'histoire de Sacravia.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:#050b18;
+      color:#f7f3ea;
+    }
+
+    /* Header premium commun */
+    .site-header {
+      display:flex;
+      align-items:center;
+      gap:1.5rem;
+      padding:0.9rem 1.5rem;
+      background:linear-gradient(90deg,#050814,#09132a);
+      border-bottom:1px solid rgba(228,200,140,0.25);
+      position:sticky;
+      top:0;
+      z-index:20;
+    }
+    .brand a {
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
+      text-decoration:none;
+    }
+    .brand img {
+      height:46px;
+      width:auto;
+      border-radius:12px;
+      box-shadow:0 0 12px rgba(0,0,0,0.5);
+    }
+    .brand-text {
+      font-weight:700;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      font-size:0.78rem;
+      color:#f7f3ea;
+      opacity:0.9;
+    }
+    .main-nav {
+      margin-left:auto;
+      display:flex;
+      gap:0.6rem;
+      flex-wrap:wrap;
+    }
+    .main-nav a {
+      color:#f7f3ea;
+      text-decoration:none;
+      font-size:0.9rem;
+      padding:0.45rem 0.85rem;
+      border-radius:999px;
+      border:1px solid transparent;
+      transition:background 0.18s ease,border-color 0.18s ease,color 0.18s ease;
+    }
+    .main-nav a:hover {
+      background:rgba(228,200,140,0.04);
+      border-color:rgba(228,200,140,0.45);
+    }
+    .main-nav a.active {
+      border-color:#e4c88c;
+      background:rgba(228,200,140,0.1);
+      color:#fdf7e8;
+      font-weight:600;
+    }
+
+    main {
+      max-width:960px;
+      margin:0 auto;
+      padding:2.5rem 1.5rem 3rem;
+    }
+
+    h1 {
+      font-size:2rem;
+      margin-bottom:0.4rem;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+    }
+    h2 {
+      margin-top:2rem;
+      margin-bottom:0.75rem;
+      font-size:1.3rem;
+    }
+    h3 {
+      margin-top:1.5rem;
+      margin-bottom:0.4rem;
+      font-size:1.1rem;
+    }
+    p {
+      line-height:1.7;
+      margin:0.5rem 0;
+    }
+    ul {
+      padding-left:1.2rem;
+      margin:0.4rem 0 0.8rem;
+    }
+    li {
+      margin:0.2rem 0;
+    }
+    .highlight {
+      color:#e4c88c;
+      font-weight:600;
+    }
+    .intro-block {
+      background:#0b1224;
+      border-radius:1rem;
+      padding:1.2rem 1.3rem;
+      border:1px solid rgba(228,200,140,0.25);
+      margin-bottom:1.5rem;
+    }
+    .quote {
+      border-left:3px solid rgba(228,200,140,0.6);
+      padding-left:0.8rem;
+      font-style:italic;
+      margin:0.6rem 0 0.8rem;
+      color:#e9ddc2;
+    }
+    footer {
+      font-size:0.8rem;
+      color:#b9b5aa;
+      text-align:center;
+      padding:1.2rem 1.5rem;
+      border-top:1px solid rgba(228,200,140,0.18);
+      background:#050814;
+    }
+    a { color:#e4c88c; }
+
+    @media (max-width:600px) {
+      .site-header { flex-wrap:wrap; justify-content:space-between; }
+      .brand-text { display:none; }
+    }
+  </style>
 </head>
 <body>
-  <header>
-        <img src="assets/logo-site.png" alt="Logo Iterdei" style="height:60px; display:block; margin:0 auto 1rem;">
-    <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="voyages.html">Voyages</a> |
-      <a href="apropos.html">À propos</a> |
-      <a href="voyages.html#contact">Contact</a>
+  <header class="site-header">
+    <div class="brand">
+      <a href="index.html">
+        <img src="assets/logo-site.png" alt="Logo Sacravia">
+        <span class="brand-text">SACRAVIA</span>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="voyages.html">Voyages</a>
+      <a href="apropos.html" class="active">À propos</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
-    <h1>À propos d’Iterdei</h1>
-    <section>
-      <h2>La mission</h2>
+    <h1>À propos de Sacravia</h1>
+
+    <section class="intro-block" aria-labelledby="intro-sacravia">
+      <h2 id="intro-sacravia">Une route, une lumière, une direction</h2>
       <p>
-        Iterdei (« Les chemins de Dieu ») est une initiative indépendante fondée à Nice pour proposer des voyages spirituels et des pèlerinages de proximité. Notre vocation : faire (re)découvrir des sanctuaires, itinéraires mariaux ou lieux d'inspiration grâce à l’accompagnement, la prière, la marche, et la convivialité.
+        Sacravia ("chemins sacrés") est une initiative née d'un désir simple&nbsp;:
+        permettre à chacun de vivre un pèlerinage ou un séjour spirituel dans un format humble,
+        fraternel et profondément humain.
+      </p>
+      <p>
+        Nous croyons que les plus grandes grâces se trouvent souvent dans les chemins les plus simples&nbsp;:
+        une route parcourue ensemble, un sanctuaire découvert dans le silence, une rencontre inattendue,
+        une prière partagée en marchant.
+      </p>
+      <p>
+        Sacravia accompagne des <strong>petits groupes de 2 à 6 personnes</strong> pour offrir une expérience authentique,
+        à taille humaine, où chacun peut avancer à son rythme.
       </p>
     </section>
-    <section>
-      <h2>Nos valeurs</h2>
+
+    <section aria-labelledby="mission-sacravia">
+      <h2 id="mission-sacravia">Notre mission</h2>
+      <p>
+        Créer des itinéraires où la route devient prière, où la marche devient rencontre, où le voyage devient lumière.
+      </p>
+      <p>
+        Sacravia propose&nbsp;:
+      </p>
       <ul>
-        <li>Authenticité : Des parcours pensés avec soin pour vivre la foi simplement, dans la nature ou des hauts lieux spirituels.</li>
-        <li>Fraternité : Groupes de 2 à 6 personnes pour favoriser l’écoute, le partage, et la rencontre.</li>
-        <li>Accompagnement : Un organisateur dévoué pour guider, conduire et rythmer le pèlerinage selon les besoins.</li>
-        <li>Sobriété : Privilégier la qualité humaine et la beauté vraie plutôt que l’offre commerciale de masse.</li>
+        <li>des <strong>pèlerinages de proximité</strong> (Paray-le-Monial, Sainte-Baume, Cotignac, Ars…)</li>
+        <li>des <strong>voyages spirituels</strong> en France et en Europe (Assise, Rome…)</li>
+        <li>des séjours <strong>personnalisés</strong> pour groupes d'amis, familles, paroisses ou fraternités</li>
+      </ul>
+      <p>
+        Chaque voyage est construit pour permettre&nbsp;:
+      </p>
+      <ul>
+        <li>le <strong>retour au silence intérieur</strong></li>
+        <li>une <strong>rencontre plus profonde avec Dieu</strong></li>
+        <li>une <strong>fraternité simple et vraie</strong></li>
+        <li>un <strong>temps de respiration</strong> dans un quotidien parfois trop dense</li>
       </ul>
     </section>
-    <section>
-      <h2>Le fondateur</h2>
+
+    <section aria-labelledby="valeurs-sacravia">
+      <h2 id="valeurs-sacravia">Nos valeurs</h2>
+
+      <h3>1. Fraternité</h3>
       <p>
-        Accompagnateur passionné par la spiritualité et la route, j’ai eu l’honneur d’assurer le transport de la Sainte Relique de Sainte Marguerite-Marie pour le diocèse de Nice. Cette mission m’a inspiré à proposer à de petits groupes chrétiens – ou simplement curieux – de découvrir, ou redécouvrir, les grands sites de pèlerinage de la région sous une forme conviviale et accessible à tous.
+        Nous avançons ensemble, sans pression ni performance.
+        La route n'est pas un défi sportif, mais un espace pour écouter, parler, respirer.
       </p>
+
+      <h3>2. Sobriété</h3>
       <p>
-        Après cette expérience marquante, riche en rencontres et en profondeur spirituelle, j’ai souhaité mettre mon expérience logistique, mon goût de l’organisation et mes compétences web au service de tous ceux qui cherchent à donner du sens à leurs voyages.
+        Pas de "tourisme spirituel", pas d'offre impersonnelle.
+        Nous privilégions la qualité humaine, la beauté vraie et des itinéraires simples, ajustés aux personnes.
+      </p>
+
+      <h3>3. Fidélité</h3>
+      <p>
+        Tous nos pèlerinages respectent les étapes spirituelles et liturgiques propres aux sanctuaires
+        et aux traditions chrétiennes.
+      </p>
+
+      <h3>4. Attention au rythme de chacun</h3>
+      <p>
+        Un pèlerinage n'est pas une course. Nous ajustons l'itinéraire pour que chacun puisse vivre ce temps
+        sereinement, sans stress, avec bienveillance.
       </p>
     </section>
-    <section>
-      <h2>Notre méthode</h2>
+
+    <section aria-labelledby="fondateur-sacravia">
+      <h2 id="fondateur-sacravia">Le fondateur</h2>
       <p>
-        Chaque itinéraire est soigneusement construit selon la tradition chrétienne et l’écoute des attentes du groupe : rythme de marche doux, temps de silence, offices ou prières partagées, hébergements sélectionnés pour leur atmosphère et leur accueil, restauration locale… L’accompagnement va de la réservation à la route elle-même, jusqu’au retour à Nice en toute sécurité.
+        Passionné par les lieux saints et les chemins de pèlerinage, j'ai eu l'honneur d'assurer le
+        <strong>transport de la Sainte Relique de Sainte Marguerite-Marie</strong> pour le diocèse de Nice&nbsp;:
+        une mission marquante, profonde et décisive.
+      </p>
+      <p class="quote">
+        Cette expérience a fait naître un appel intérieur&nbsp;: offrir à d'autres la possibilité de vivre
+        un chemin spirituel à leur tour, avec simplicité, sécurité et lumière.
+      </p>
+      <p>
+        Fort d'une expérience dans l'organisation, la conduite, l'accompagnement de groupes et le développement web,
+        j'ai fondé Sacravia pour mettre ces compétences au service&nbsp;:
+      </p>
+      <ul>
+        <li>des paroisses,</li>
+        <li>des groupes d'amis,</li>
+        <li>des familles,</li>
+        <li>des croyants en recherche,</li>
+        <li>des personnes souhaitant vivre un temps à part.</li>
+      </ul>
+      <p>
+        Mon rôle&nbsp;: <strong>porter, conduire, accompagner, veiller… pour que vous puissiez marcher, prier, respirer.</strong>
+      </p>
+    </section>
+
+    <section aria-labelledby="methode-sacravia">
+      <h2 id="methode-sacravia">Notre méthode</h2>
+      <p>
+        Chaque itinéraire est pensé comme un véritable <strong>chemin intérieur</strong>, articulé autour de&nbsp;:
+      </p>
+      <ul>
+        <li>marches douces et accessibles,</li>
+        <li>temps de silence et de contemplation,</li>
+        <li>temps de prière personnelle ou communautaire,</li>
+        <li>rencontres avec des lieux, des témoins, des traditions,</li>
+        <li>hébergements sélectionnés pour leur accueil et leur paix,</li>
+        <li>accompagnement logistique complet du départ au retour.</li>
+      </ul>
+      <p>
+        Vous n'avez qu'à vous laisser guider&nbsp;: nous organisons le reste.
+      </p>
+    </section>
+
+    <section aria-labelledby="pourquoi-sacravia">
+      <h2 id="pourquoi-sacravia">Pourquoi choisir Sacravia&nbsp;?</h2>
+      <p>
+        Parce que vous cherchez&nbsp;:
+      </p>
+      <ul>
+        <li>un pèlerinage <strong>simple, profond et fraternel</strong>,</li>
+        <li>un accompagnement <strong>humain, discret et bienveillant</strong>,</li>
+        <li>une façon de voyager <strong>qui nourrit vraiment l'âme</strong>,</li>
+        <li>un temps pour vous recentrer et <strong>retrouver la paix</strong>.</li>
+      </ul>
+      <p>
+        Parce qu'un petit groupe change tout&nbsp;: on se parle, on marche ensemble, on prie ensemble,
+        on vit un vrai chemin.
+      </p>
+    </section>
+
+    <section aria-labelledby="invitation-sacravia">
+      <h2 id="invitation-sacravia">Une invitation</h2>
+      <p>
+        Ouvrir un itinéraire Sacravia, c'est ouvrir une parenthèse.
+        C'est accepter d'avancer autrement, pas à pas, cœur ouvert.
+        C'est laisser Dieu éclairer le chemin.
+      </p>
+      <p>
+        <strong>Bienvenue sur la route.</strong><br/>
+        <strong>Bienvenue chez Sacravia.</strong>
+      </p>
+      <p>
+        Pour toute question ou pour partager votre projet de pèlerinage, vous pouvez nous écrire à&nbsp;:
+        <a href="mailto:contact@sacravia.fr">contact@sacravia.fr</a>
       </p>
     </section>
   </main>
+
   <footer>
-    <p>© 2025 Iterdei – Voyage & Pèlerinages • <a href="mailto:contact@iterdei.org">contact@iterdei.org</a></p>
+    © 2025 Sacravia – Voyages &amp; Pèlerinages • <a href="mailto:contact@sacravia.fr">contact@sacravia.fr</a>
   </footer>
 </body>
 </html>
-Ajout de la page "À propos" avec présentation de la mission, des valeurs, du fondateur et de la méthode Iterdei.
