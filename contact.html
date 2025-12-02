@@ -1,16 +1,17 @@
-pèlerinages<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<hePèlerinagesad>
+<head>
   <meta charset="UTF-8" />
   <title>Contact – Sacravia</title>
   <meta name="description" content="Contactez Sacravia pour une demande de devis, un projet de pèlerinage ou toute question sur nos voyages spirituels pour petits groupes.">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Open Graph -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Contact – Sacravia"/>
   <meta property="og:description" content="Contactez Sacravia pour organiser votre pèlerinage ou séjour spirituel en groupe."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://snowbru.github.io/Iterdei/contact.html"/>
   <meta property="og:image" content="https://snowbru.github.io/Iterdei/assets/og-cover.png"/>
+
   <style>
     body {
       margin:0;
@@ -63,7 +64,7 @@ pèlerinages<!DOCTYPE html>
       padding:0.45rem 0.85rem;
       border-radius:999px;
       border:1px solid transparent;
-      transition:background 0.18s ease,border-color 0.18s ease, color 0.18s ease;
+      transition:background 0.18s ease,border-color 0.18s ease,color 0.18s ease;
     }
     .main-nav a:hover {
       background:rgba(228,200,140,0.04);
@@ -106,7 +107,7 @@ pèlerinages<!DOCTYPE html>
       margin-bottom:0.2rem;
       font-size:0.9rem;
     }
-    input, textarea {
+    input, textarea, select {
       width:100%;
       padding:0.6rem 0.7rem;
       border-radius:0.4rem;
@@ -118,15 +119,6 @@ pèlerinages<!DOCTYPE html>
     textarea {
       min-height:130px;
       resize:vertical;
-    }
-        select {
-      width:100%;
-      padding:0.6rem 0.7rem;
-      border-radius:0.4rem;
-      border:1px solid #2b3350;
-      background:#0b1224;
-      color:#f7f3ea;
-      font:inherit;
     }
     button {
       margin-top:1rem;
@@ -179,6 +171,7 @@ pèlerinages<!DOCTYPE html>
       Utilisez ce formulaire pour une demande simple, un devis ou une proposition de voyage.
     </p>
 
+    <!-- Remplace TON_ID_FORMSPREE par ton vrai ID Formspree -->
     <form action="https://formspree.io/f/TON_ID_FORMSPREE" method="POST">
       <label for="nom">Nom complet</label>
       <input id="nom" name="Nom" required />
@@ -186,12 +179,13 @@ pèlerinages<!DOCTYPE html>
       <label for="email">Adresse e-mail</label>
       <input id="email" name="Email" type="email" required />
 
-            <label for="type">Type de demande</label>
-      <select id="type" name="type">
+      <label for="type">Type de demande</label>
+      <select id="type" name="Type de demande">
         <option value="devis">Demande de devis</option>
         <option value="infos">Question générale</option>
         <option value="projet-groupe">Projet de pèlerinage de groupe</option>
       </select>
+
       <label for="message">Message</label>
       <textarea id="message" name="Message" required></textarea>
 
@@ -204,12 +198,8 @@ pèlerinages<!DOCTYPE html>
         Vous pouvez également nous écrire directement à&nbsp;:
         <a href="mailto:ton-email@sacravia.fr">ton-email@sacravia.fr</a>
       </p>
-      <p>
-        Disponibilité&nbsp;: du lundi au samedi, 9h–18h.
-      </p>
-      <p>
-        Vous pouvez nous contacter pour&nbsp;:
-      </p>
+      <p>Disponibilité&nbsp;: du lundi au samedi, 9h–18h.</p>
+      <p>Vous pouvez nous contacter pour&nbsp;:</p>
       <ul>
         <li>demander un devis&nbsp;;</li>
         <li>proposer une destination&nbsp;;</li>
@@ -224,5 +214,3 @@ pèlerinages<!DOCTYPE html>
   </footer>
 </body>
 </html>
-
-<!-- Updated links -->
